@@ -1,6 +1,15 @@
 <template>
-  <v-container fluid>
-    <v-layout row>
+  <v-container fluid class="ma-0 pa-0">
+    <v-layout class="mt-4 mb-8">
+      <welcome />
+    </v-layout>
+
+    <v-layout row align-center justify-center class="my-3">
+      <v-flex md4 class="white--text title primary pa-4 text-center">
+        Select your station for bookings!
+      </v-flex>
+    </v-layout>
+    <v-layout row class="mx-2">
       <v-flex sm6 md4 class="pa-2">
         <station-search
           label="Station"
@@ -138,9 +147,11 @@
 
 <script>
 import editBooking from "@/components/editBooking";
+import welcome from "@/components/welcome";
 export default {
   components: {
-    editBooking
+    editBooking,
+    welcome
   },
   data: () => ({
     loading: false,
