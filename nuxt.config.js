@@ -28,7 +28,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     "~/plugins/preload",
-    "~/plugins/axios"
+    "~/plugins/axios",
+    '~/plugins/dateFilters',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
