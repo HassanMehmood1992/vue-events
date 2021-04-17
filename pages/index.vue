@@ -77,7 +77,7 @@
                 <v-card-text v-if="loadingBookingCard">
                   <v-progress-circular indeterminate color="white" :width="3" />
                 </v-card-text>
-                <v-card-text v-else>
+                <v-card-text v-else-if="bookingCard">
                   <v-icon
                     small
                     color="white"
@@ -121,22 +121,40 @@
         </v-calendar>
       </div>
     </v-card>
+
+    <edit-booking
+      :actionType="actionType"
+      :openDrawer="addEditDrawer"
+      :booking="bookingCard"
+      @bookingUpdated="onBookingUpdated()"
+      @onclose="
+        addEditDrawer = false;
+        bookingCard = null;
+      "
+    >
+    </edit-booking>
   </v-container>
 </template>
 
 <script>
+import editBooking from "@/components/editBooking";
 export default {
+  components: {
+    editBooking
+  },
   data: () => ({
     loading: false,
     station: null,
+    addEditDrawer: false,
+    actionType: "Edit",
     start: new Date().toISOString().substr(0, 10),
     type: "week",
     loadingBookingCard: false,
     bookingCard: {},
     toggleView: "week",
     calendarLabel: "",
-    arrayEvents: [],
     bookings: [],
+    selectedBooking: null,
     colors: ["purple", "green", "primary", "secondary", "red"]
   }),
 
@@ -208,7 +226,13 @@ export default {
         this.toggleView = "week";
       }
     },
-    editSchedule() {},
+    editSchedule() {
+      this.actionType = "Edit";
+      this.addEditDrawer = true;
+    },
+    onBookingUpdated() {
+      alert("Update schedule and perform post update operations here");
+    },
     setBookings(stations) {
       let schedules = [];
       stations.forEach(station => {
