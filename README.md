@@ -3,7 +3,7 @@
 
 ## Demo
 
-Find a working demo [here](https://mach-events.web.app/)
+Find a working demo [here](https://mach-events.web.app/) and on [gitHub pages](https://hassanmehmood1992.github.io/vue-events/)
 
 ## Build Setup
 Make sure you have node installed on your machine and npm command is accessible. Clone this repo and open bash 
