@@ -18,6 +18,9 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
+# run tests
+$ npm run test
+
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
@@ -41,6 +44,20 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ![alt text](https://user-images.githubusercontent.com/17563392/115138324-77017c00-a03c-11eb-8a0c-f161b2f873c5.png?raw=true)
 
+
+
+# Tests
+
+Basic testing of components is added
+
+![alt text](https://user-images.githubusercontent.com/17563392/115144728-539bf880-a05f-11eb-9d24-260b7ae79f3f.png?raw=true)
+
+
+# Upcoming
+
+- Improve UI design by adding more views like year and month views.
+- Booking details page can be moved to a new view if we have more details to show.
+- Containerizing the solution with Docker.
 
 
 
