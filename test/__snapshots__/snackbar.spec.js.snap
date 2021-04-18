@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snackbar component should generate snackbar 1`] = `
+<v-snackbar
+  right=""
+  top=""
+>
+  
+    
+    
+  <v-btn
+    dark=""
+    icon=""
+    small=""
+    text=""
+  >
+    <v-icon
+      small=""
+    >
+      mdi-close
+    </v-icon>
+  </v-btn>
+</v-snackbar>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome component is fully functional 1`] = `
+<v-container
+  class="ma-0 pa-0"
+  fluid=""
+>
+  <v-img
+    lazy-src="/images/roadsurfer-campervan-hire.jpg"
+    min-height="50vh"
+    src="/images/roadsurfer-campervan-hire.jpg"
+  >
+    <v-layout
+      class="my-10"
+      justify-end=""
+      row=""
+    >
+      <v-flex
+        class="secondary pa-4 ma-3 title white--text"
+        md3=""
+      >
+        #RoadSurferAssignment
+      </v-flex>
+    </v-layout>
+  </v-img>
+</v-container>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Station search component is fully functional 1`] = `
+<v-autocomplete
+  hide-no-data=""
+  hide-selected=""
+  item-text="name"
+  item-value="id"
+  items=""
+  label="Test Title"
+  name="stationSearch"
+  no-filter=""
+  rules=""
+  search-input=""
+/>
+`;

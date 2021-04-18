@@ -6,9 +6,7 @@
       min-height="50vh"
     >
       <v-layout row class="my-10" justify-end>
-        <v-flex md3 class="secondary pa-4 ma-3 title white--text">
-          #RoadSurferAssignment
-        </v-flex>
+        <v-flex md3 class="secondary pa-4 ma-3 title white--text">#RoadSurferAssignment</v-flex>
       </v-layout>
     </v-img>
   </v-container>
