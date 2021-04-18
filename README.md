@@ -58,6 +58,7 @@ Basic testing of components is added
 - Improve UI design by adding more views like year and month views.
 - Booking details page can be moved to a new view if we have more details to show.
 - Containerizing the solution with Docker.
+- Drag and drop can be added as per [documentation](https://vuetifyjs.com/en/components/calendars/#misc)
 
 
 
